@@ -7,7 +7,24 @@ const routes = [
     component: () => import('@/layout/index.vue'),
     redirect: 'dashboard',
     children: homePageRoutes
-  }, {
+  },
+  {
+    name: 'appStoreLayout',
+    path: '/appStoreLayout',
+    redirect: 'appStore',
+    component: () => import('@/layout/index.vue'),
+    children: [{
+      name: 'appStore',
+      path: '/appStore',
+      meta: {
+        title: '应用市场',
+        icon: 'icon-gift',
+        type: 'M',
+      },
+      component: () => import('@/views/appStore/index.vue')
+    }]
+  }
+  , {
     name: 'formLayout',
     path: '/formLayout',
     component: () => import('@/layout/index.vue'),
