@@ -45,7 +45,7 @@
       <div class="applist-card block md:grid md:grid-cols-4 md:gap-4">
         <a-card class="border mt-3 rounded relative flex-col" hoverable :bordered="false">
           <div
-            style="background-image: url(); background-size: cover;"
+            style="background-image: url(https://img2.baidu.com/it/u=4047488721,455163148&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500); background-size: cover;"
             class="app-image rounded-t"
           >
             <div class="obscure">
@@ -90,7 +90,7 @@
         </a-card>
         <a-card class="border mt-3 rounded relative flex-col" hoverable :bordered="false">
           <div
-            style="background-image: url(); background-size: cover;"
+            style="background-image: url(https://img2.baidu.com/it/u=4047488721,455163148&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500); background-size: cover;"
             class="app-image rounded-t"
           >
             <div class="obscure">
