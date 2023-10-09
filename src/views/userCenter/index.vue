@@ -83,7 +83,6 @@
   const operationLogList = ref([])
 
   const requestParams = reactive({
-    username: userStore.user.username,
     pageSize: 5
   })
 
@@ -103,7 +102,7 @@
     () => userInfo.avatar,
     async newAvatar => {
       if (newAvatar) {
-        const response = await user.updateInfo({ id: userInfo.id, avatar: newAvatar })
+        const response = await user.updateInfo({ avatar: newAvatar })
         if (response.success) {
           Message.success('头像修改成功')
           userStore.user.avatar = newAvatar
